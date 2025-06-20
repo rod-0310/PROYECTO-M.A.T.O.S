@@ -1,0 +1,112 @@
+#include <AccelStepper.h>
+#include <Wire.h>
+#include <AS5600.h>
+#include <MPU6050_light.h>
+#include <PID_v1.h>
+
+// Definir los pines de los motores
+#define PIN_STEP_RR  13
+#define PIN_DIR_RR   10
+#define PIN_ENABLE_RR 14
+
+#define PIN_STEP_RF  23
+#define PIN_DIR_RF   17
+#define PIN_ENABLE_RF 16
+
+#define PIN_STEP_LR  25
+#define PIN_DIR_LR   27
+#define PIN_ENABLE_LR 12
+
+#define PIN_STEP_LF  15
+#define PIN_DIR_LF   4
+#define PIN_ENABLE_LF 26
+
+#define ACELERACION 1000
+
+// Configuración de los sensores
+AS5600 as5600;  // Instancia del sensor AS5600
+MPU6050 mpu;    // Instancia del sensor MPU6050
+
+// Variables PID
+double setpoint = 0.0;  // Ángulo deseado
+double input = 0.0;     // Ángulo actual (desde AS5600)
+double output = 0.0;    // Salida del PID (ajuste de velocidad)
+PID pid(&input, &output, &setpoint, 2.0, 5.0, 1.0, DIRECT);  // Inicialización del PID con valores arbitrarios
+
+AccelStepper motor_RR(AccelStepper::DRIVER, PIN_STEP_RR, PIN_DIR_RR);
+AccelStepper motor_RF(AccelStepper::DRIVER, PIN_STEP_RF, PIN_DIR_RF);
+AccelStepper motor_LR(AccelStepper::DRIVER, PIN_STEP_LR, PIN_DIR_LR);
+AccelStepper motor_LF(AccelStepper::DRIVER, PIN_STEP_LF, PIN_DIR_LF);
+
+float pps_r_target = 0.0;
+float pps_l_target = 0.0;
+
+void setup() {
+  Serial.begin(115200);
+
+  // Inicializar sensores
+  Wire.begin();
+  as5600.begin();
+  mpu.initialize();
+
+  // Configuración de motores
+  motor_RR.setAcceleration(ACELERACION);
+  motor_RF.setAcceleration(ACELERACION);
+  motor_LR.setAcceleration(ACELERACION);
+  motor_LF.setAcceleration(ACELERACION);
+
+  motor_RR.setPinsInverted(false, true, false);  // Dirección de las ruedas
+  motor_RF.setPinsInverted(false, true, false);
+  motor_LR.setPinsInverted(true, false, false);
+  motor_LF.setPinsInverted(true, false, false);
+
+  digitalWrite(PIN_ENABLE_RR, LOW);
+  digitalWrite(PIN_ENABLE_RF, LOW);
+  digitalWrite(PIN_ENABLE_LR, LOW);
+  digitalWrite(PIN_ENABLE_LF, LOW);
+
+  // Inicializar PID
+  pid.SetMode(AUTOMATIC);  // Habilitar el modo PID
+  pid.SetOutputLimits(-255, 255);  // Limitar la salida del PID
+}
+
+void loop() {
+  if (Serial.available()) {
+    String line = Serial.readStringUntil('\n');
+    sscanf(line.c_str(), "R:%f,L:%f", &pps_r_target, &pps_l_target);
+    Serial.printf("[UART] pps_R: %.2f | pps_L: %.2f\n", pps_r_target, pps_l_target);
+  }
+
+  // Leer ángulo del AS5600
+  input = as5600.getAngle();
+
+  // Leer la aceleración y velocidad angular del MPU6050
+  float accelX = mpu.getAccelerationX();
+  float gyroZ = mpu.getGyroZ();
+
+  // Control PID: ajustamos la velocidad de los motores con base en el PID
+  pid.Compute();
+
+  // Ajuste de la velocidad de las ruedas con base en la salida del PID
+  float forward = (pps_l_target + pps_r_target) / 2.0;
+  float turn    = (pps_r_target - pps_l_target) / 2.0;
+
+  // La velocidad de las ruedas derecha e izquierda
+  float speed_r = forward + turn + output;
+  float speed_l = forward - turn - output;
+
+  motor_RR.setMaxSpeed(abs(speed_r));
+  motor_RF.setMaxSpeed(abs(speed_r));
+  motor_RR.setSpeed(speed_r);
+  motor_RF.setSpeed(speed_r);
+
+  motor_LR.setMaxSpeed(abs(speed_l));
+  motor_LF.setMaxSpeed(abs(speed_l));
+  motor_LR.setSpeed(speed_l);
+  motor_LF.setSpeed(speed_l);
+
+  motor_RR.runSpeed();
+  motor_RF.runSpeed();
+  motor_LR.runSpeed();
+  motor_LF.runSpeed();
+}
