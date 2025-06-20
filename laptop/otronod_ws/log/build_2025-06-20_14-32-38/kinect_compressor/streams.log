@@ -1,0 +1,28 @@
+[0.608s] Invoking command in '/home/weimar/kinet/otronod_ws/src/kinect_compressor': PYTHONPATH=/home/weimar/kinet/otronod_ws/build/kinect_compressor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinect_compressor build --build-base /home/weimar/kinet/otronod_ws/build/kinect_compressor/build install --record /home/weimar/kinet/otronod_ws/build/kinect_compressor/install.log --single-version-externally-managed install_data
+[0.831s] running egg_info
+[0.832s] writing ../../build/kinect_compressor/kinect_compressor.egg-info/PKG-INFO
+[0.832s] writing dependency_links to ../../build/kinect_compressor/kinect_compressor.egg-info/dependency_links.txt
+[0.832s] writing entry points to ../../build/kinect_compressor/kinect_compressor.egg-info/entry_points.txt
+[0.832s] writing requirements to ../../build/kinect_compressor/kinect_compressor.egg-info/requires.txt
+[0.832s] writing top-level names to ../../build/kinect_compressor/kinect_compressor.egg-info/top_level.txt
+[0.834s] reading manifest file '../../build/kinect_compressor/kinect_compressor.egg-info/SOURCES.txt'
+[0.835s] writing manifest file '../../build/kinect_compressor/kinect_compressor.egg-info/SOURCES.txt'
+[0.835s] running build
+[0.835s] running build_py
+[0.835s] copying kinect_compressor/pidyolo.py -> /home/weimar/kinet/otronod_ws/build/kinect_compressor/build/lib/kinect_compressor
+[0.835s] running install
+[0.835s] running install_lib
+[0.836s] copying /home/weimar/kinet/otronod_ws/build/kinect_compressor/build/lib/kinect_compressor/pidyolo.py -> /home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/python3.10/site-packages/kinect_compressor
+[0.836s] byte-compiling /home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/python3.10/site-packages/kinect_compressor/pidyolo.py to pidyolo.cpython-310.pyc
+[0.837s] running install_data
+[0.837s] running install_egg_info
+[0.838s] removing '/home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/python3.10/site-packages/kinect_compressor-0.0.0-py3.10.egg-info' (and everything under it)
+[0.839s] Copying ../../build/kinect_compressor/kinect_compressor.egg-info to /home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/python3.10/site-packages/kinect_compressor-0.0.0-py3.10.egg-info
+[0.839s] running install_scripts
+[0.856s] Installing depth_to_scan script to /home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/kinect_compressor
+[0.856s] Installing fake_odom script to /home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/kinect_compressor
+[0.870s] Installing kinect_image script to /home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/kinect_compressor
+[0.870s] Installing modo_giro script to /home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/kinect_compressor
+[0.870s] Installing pid_controller script to /home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/kinect_compressor
+[0.870s] writing list of installed files to '/home/weimar/kinet/otronod_ws/build/kinect_compressor/install.log'
+[0.888s] Invoked command in '/home/weimar/kinet/otronod_ws/src/kinect_compressor' returned '0': PYTHONPATH=/home/weimar/kinet/otronod_ws/build/kinect_compressor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinect_compressor build --build-base /home/weimar/kinet/otronod_ws/build/kinect_compressor/build install --record /home/weimar/kinet/otronod_ws/build/kinect_compressor/install.log --single-version-externally-managed install_data

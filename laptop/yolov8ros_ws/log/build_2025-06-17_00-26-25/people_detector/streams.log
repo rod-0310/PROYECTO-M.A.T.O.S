@@ -1,0 +1,46 @@
+[0.623s] Invoking command in '/home/weimar/pfr/yolov8ros_ws/src/ros2_yolov8_people_detection/people_detector': PYTHONPATH=/home/weimar/pfr/yolov8ros_ws/build/people_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/people_detector build --build-base /home/weimar/pfr/yolov8ros_ws/build/people_detector/build install --record /home/weimar/pfr/yolov8ros_ws/build/people_detector/install.log --install-scripts $base/lib/people_detector --single-version-externally-managed install_data
+[0.849s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.849s]   warnings.warn(
+[0.854s] running egg_info
+[0.855s] creating ../../../build/people_detector/people_detector.egg-info
+[0.855s] writing ../../../build/people_detector/people_detector.egg-info/PKG-INFO
+[0.855s] writing dependency_links to ../../../build/people_detector/people_detector.egg-info/dependency_links.txt
+[0.855s] writing entry points to ../../../build/people_detector/people_detector.egg-info/entry_points.txt
+[0.855s] writing requirements to ../../../build/people_detector/people_detector.egg-info/requires.txt
+[0.856s] writing top-level names to ../../../build/people_detector/people_detector.egg-info/top_level.txt
+[0.856s] writing manifest file '../../../build/people_detector/people_detector.egg-info/SOURCES.txt'
+[0.858s] reading manifest file '../../../build/people_detector/people_detector.egg-info/SOURCES.txt'
+[0.858s] writing manifest file '../../../build/people_detector/people_detector.egg-info/SOURCES.txt'
+[0.858s] running build
+[0.858s] running build_py
+[0.858s] creating /home/weimar/pfr/yolov8ros_ws/build/people_detector/build
+[0.859s] creating /home/weimar/pfr/yolov8ros_ws/build/people_detector/build/lib
+[0.859s] creating /home/weimar/pfr/yolov8ros_ws/build/people_detector/build/lib/people_detector
+[0.859s] copying people_detector/__init__.py -> /home/weimar/pfr/yolov8ros_ws/build/people_detector/build/lib/people_detector
+[0.859s] copying people_detector/people_detect.py -> /home/weimar/pfr/yolov8ros_ws/build/people_detector/build/lib/people_detector
+[0.859s] copying people_detector/video_pub.py -> /home/weimar/pfr/yolov8ros_ws/build/people_detector/build/lib/people_detector
+[0.859s] running install
+[0.859s] running install_lib
+[0.860s] creating /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages/people_detector
+[0.860s] copying /home/weimar/pfr/yolov8ros_ws/build/people_detector/build/lib/people_detector/__init__.py -> /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages/people_detector
+[0.860s] copying /home/weimar/pfr/yolov8ros_ws/build/people_detector/build/lib/people_detector/people_detect.py -> /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages/people_detector
+[0.860s] copying /home/weimar/pfr/yolov8ros_ws/build/people_detector/build/lib/people_detector/video_pub.py -> /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages/people_detector
+[0.860s] byte-compiling /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages/people_detector/__init__.py to __init__.cpython-310.pyc
+[0.860s] byte-compiling /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages/people_detector/people_detect.py to people_detect.cpython-310.pyc
+[0.861s] byte-compiling /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages/people_detector/video_pub.py to video_pub.cpython-310.pyc
+[0.861s] running install_data
+[0.861s] creating /home/weimar/pfr/yolov8ros_ws/install/people_detector/share/ament_index
+[0.861s] creating /home/weimar/pfr/yolov8ros_ws/install/people_detector/share/ament_index/resource_index
+[0.861s] creating /home/weimar/pfr/yolov8ros_ws/install/people_detector/share/ament_index/resource_index/packages
+[0.861s] copying resource/people_detector -> /home/weimar/pfr/yolov8ros_ws/install/people_detector/share/ament_index/resource_index/packages
+[0.861s] copying package.xml -> /home/weimar/pfr/yolov8ros_ws/install/people_detector/share/people_detector
+[0.861s] copying launch/people_detection.py -> /home/weimar/pfr/yolov8ros_ws/install/people_detector/share/people_detector
+[0.861s] copying data/yolov8n.pt -> /home/weimar/pfr/yolov8ros_ws/install/people_detector/share/people_detector
+[0.865s] copying data/video.mp4 -> /home/weimar/pfr/yolov8ros_ws/install/people_detector/share/people_detector
+[0.877s] running install_egg_info
+[0.879s] Copying ../../../build/people_detector/people_detector.egg-info to /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages/people_detector-0.0.0-py3.10.egg-info
+[0.880s] running install_scripts
+[0.899s] Installing people_detect_subscriber script to /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/people_detector
+[0.899s] Installing video_publisher script to /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/people_detector
+[0.899s] writing list of installed files to '/home/weimar/pfr/yolov8ros_ws/build/people_detector/install.log'
+[0.923s] Invoked command in '/home/weimar/pfr/yolov8ros_ws/src/ros2_yolov8_people_detection/people_detector' returned '0': PYTHONPATH=/home/weimar/pfr/yolov8ros_ws/build/people_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/people_detector build --build-base /home/weimar/pfr/yolov8ros_ws/build/people_detector/build install --record /home/weimar/pfr/yolov8ros_ws/build/people_detector/install.log --install-scripts $base/lib/people_detector --single-version-externally-managed install_data

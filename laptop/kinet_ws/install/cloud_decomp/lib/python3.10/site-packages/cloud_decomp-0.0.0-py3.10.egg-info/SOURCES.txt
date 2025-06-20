@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/cloud_decomp/cloud_decomp.egg-info/PKG-INFO
+../../build/cloud_decomp/cloud_decomp.egg-info/SOURCES.txt
+../../build/cloud_decomp/cloud_decomp.egg-info/dependency_links.txt
+../../build/cloud_decomp/cloud_decomp.egg-info/entry_points.txt
+../../build/cloud_decomp/cloud_decomp.egg-info/requires.txt
+../../build/cloud_decomp/cloud_decomp.egg-info/top_level.txt
+../../build/cloud_decomp/cloud_decomp.egg-info/zip-safe
+cloud_decomp/__init__.py
+cloud_decomp/desco.py
+resource/cloud_decomp
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

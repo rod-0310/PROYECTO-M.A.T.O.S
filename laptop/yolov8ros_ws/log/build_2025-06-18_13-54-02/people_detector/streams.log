@@ -1,0 +1,24 @@
+[0.541s] Invoking command in '/home/weimar/pfr/yolov8ros_ws/src/ros2_yolov8_people_detection/people_detector': PYTHONPATH=/home/weimar/pfr/yolov8ros_ws/build/people_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/people_detector build --build-base /home/weimar/pfr/yolov8ros_ws/build/people_detector/build install --record /home/weimar/pfr/yolov8ros_ws/build/people_detector/install.log --install-scripts $base/lib/people_detector --single-version-externally-managed install_data
+[0.734s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.734s]   warnings.warn(
+[0.741s] running egg_info
+[0.741s] writing ../../../build/people_detector/people_detector.egg-info/PKG-INFO
+[0.741s] writing dependency_links to ../../../build/people_detector/people_detector.egg-info/dependency_links.txt
+[0.741s] writing entry points to ../../../build/people_detector/people_detector.egg-info/entry_points.txt
+[0.742s] writing requirements to ../../../build/people_detector/people_detector.egg-info/requires.txt
+[0.742s] writing top-level names to ../../../build/people_detector/people_detector.egg-info/top_level.txt
+[0.743s] reading manifest file '../../../build/people_detector/people_detector.egg-info/SOURCES.txt'
+[0.744s] writing manifest file '../../../build/people_detector/people_detector.egg-info/SOURCES.txt'
+[0.744s] running build
+[0.744s] running build_py
+[0.745s] running install
+[0.745s] running install_lib
+[0.746s] running install_data
+[0.746s] running install_egg_info
+[0.747s] removing '/home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages/people_detector-0.0.0-py3.10.egg-info' (and everything under it)
+[0.747s] Copying ../../../build/people_detector/people_detector.egg-info to /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages/people_detector-0.0.0-py3.10.egg-info
+[0.748s] running install_scripts
+[0.761s] Installing people_detect_subscriber script to /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/people_detector
+[0.761s] Installing video_publisher script to /home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/people_detector
+[0.762s] writing list of installed files to '/home/weimar/pfr/yolov8ros_ws/build/people_detector/install.log'
+[0.778s] Invoked command in '/home/weimar/pfr/yolov8ros_ws/src/ros2_yolov8_people_detection/people_detector' returned '0': PYTHONPATH=/home/weimar/pfr/yolov8ros_ws/build/people_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/weimar/pfr/yolov8ros_ws/install/people_detector/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/people_detector build --build-base /home/weimar/pfr/yolov8ros_ws/build/people_detector/build install --record /home/weimar/pfr/yolov8ros_ws/build/people_detector/install.log --install-scripts $base/lib/people_detector --single-version-externally-managed install_data

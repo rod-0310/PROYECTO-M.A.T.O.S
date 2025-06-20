@@ -1,0 +1,71 @@
+[0.000000] (-) TimerEvent: {}
+[0.000391] (kinect_ros2) JobQueued: {'identifier': 'kinect_ros2', 'dependencies': OrderedDict()}
+[0.000417] (kinect_ros2) JobStarted: {'identifier': 'kinect_ros2'}
+[0.005567] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'cmake'}
+[0.006307] (kinect_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/weimar/kinet/kinet_ws/src/kinect_ros2', '-DCMAKE_INSTALL_PREFIX=/home/weimar/kinet/kinet_ws/install/kinect_ros2'], 'cwd': '/home/weimar/kinet/kinet_ws/build/kinect_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'weimar'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/weimar'), ('OLDPWD', '/home/weimar/kinet/kinet_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '(myenv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('MANAGERPID', '2019'), ('SYSTEMD_EXEC_PID', '2452'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4885'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/weimar/kinet/ros2kine_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'weimar'), ('JOURNAL_STREAM', '8:13982'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'weimar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/home/weimar/kinet/myenv/bin:/opt/ros/humble/bin:/home/weimar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/weimar-OMEN-by-HP-Laptop-16-b0xxx:@/tmp/.ICE-unix/2271,unix/weimar-OMEN-by-HP-Laptop-16-b0xxx:/tmp/.ICE-unix/2271'), ('INVOCATION_ID', 'b19588cb68954c4f8f2f509c2da02d5a'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('VIRTUAL_ENV_PROMPT', '(myenv)'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/weimar/kinet/ros2kine_ws/install/kinect_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:6cf93245-c053-49c3-b3a0-9d0a2dd43c90'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VIRTUAL_ENV', '/home/weimar/kinet/myenv'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/weimar/kinet/kinet_ws/build/kinect_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/weimar/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/weimar/kinet/ros2kine_ws/install/kinect_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/weimar/kinet/ros2kine_ws/install/kinect_publisher:/opt/ros/humble')]), 'shell': False}
+[0.045915] (kinect_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.087527] (kinect_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.092831] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099769] (-) TimerEvent: {}
+[0.142483] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.147610] (kinect_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.147734] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.147965] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.149916] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199874] (-) TimerEvent: {}
+[0.206670] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.211773] (kinect_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.212095] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.212337] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.214027] (kinect_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299978] (-) TimerEvent: {}
+[0.305218] (kinect_ros2) StdoutLine: {'line': b'-- Found Python3: /home/weimar/kinet/myenv/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.373074] (kinect_ros2) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[0.400068] (-) TimerEvent: {}
+[0.413880] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.416736] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.421833] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.429576] (kinect_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.438443] (kinect_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.479746] (kinect_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.481894] (kinect_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500163] (-) TimerEvent: {}
+[0.542955] (kinect_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.561730] (kinect_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.591578] (kinect_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.597206] (kinect_ros2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.600230] (-) TimerEvent: {}
+[0.664441] (kinect_ros2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.664590] (kinect_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.700334] (-) TimerEvent: {}
+[0.715915] (kinect_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.716588] (kinect_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.757729] (kinect_ros2) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[0.758502] (kinect_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.780311] (kinect_ros2) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.782397] (kinect_ros2) StdoutLine: {'line': b'-- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[0.798921] (kinect_ros2) StdoutLine: {'line': b'-- Found depth_image_proc: 3.0.8 (/opt/ros/humble/share/depth_image_proc/cmake)\n'}
+[0.800383] (-) TimerEvent: {}
+[0.874850] (kinect_ros2) StdoutLine: {'line': b'-- Found camera_info_manager: 3.1.11 (/opt/ros/humble/share/camera_info_manager/cmake)\n'}
+[0.897894] (kinect_ros2) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.898050] (kinect_ros2) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>\n'}
+[0.898100] (kinect_ros2) StderrLine: {'line': b'    from catkin_pkg.package import parse_package_string\n'}
+[0.898141] (kinect_ros2) StderrLine: {'line': b"ModuleNotFoundError: No module named 'catkin_pkg'\n"}
+[0.900032] (kinect_ros2) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[0.900099] (kinect_ros2) StderrLine: {'line': b'  execute_process(/home/weimar/kinet/myenv/bin/python3\n'}
+[0.900147] (kinect_ros2) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[0.900193] (kinect_ros2) StderrLine: {'line': b'  /home/weimar/kinet/kinet_ws/src/kinect_ros2/package.xml\n'}
+[0.900239] (kinect_ros2) StderrLine: {'line': b'  /home/weimar/kinet/kinet_ws/build/kinect_ros2/ament_cmake_core/package.cmake)\n'}
+[0.900287] (kinect_ros2) StderrLine: {'line': b'  returned error code 1\n'}
+[0.900328] (kinect_ros2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.900364] (kinect_ros2) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[0.900399] (-) TimerEvent: {}
+[0.900487] (kinect_ros2) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)\n'}
+[0.900542] (kinect_ros2) StderrLine: {'line': b'  CMakeLists.txt:66 (ament_package)\n'}
+[0.900576] (kinect_ros2) StderrLine: {'line': b'\n'}
+[0.900609] (kinect_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[0.900642] (kinect_ros2) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.900695] (kinect_ros2) StdoutLine: {'line': b'See also "/home/weimar/kinet/kinet_ws/build/kinect_ros2/CMakeFiles/CMakeOutput.log".\n'}
+[0.908418] (kinect_ros2) CommandEnded: {'returncode': 1}
+[0.922997] (kinect_ros2) JobEnded: {'identifier': 'kinect_ros2', 'rc': 1}
+[0.933521] (-) EventReactorShutdown: {}

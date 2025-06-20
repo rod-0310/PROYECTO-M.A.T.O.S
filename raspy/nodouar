@@ -1,0 +1,48 @@
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Twist
+import serial
+import math
+
+class CmdVelToUART(Node):
+    def __init__(self):
+        super().__init__('cmdvel_to_uart')
+
+        # Configura puerto serial (ajusta el puerto según tu PC)
+        self.ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)
+
+        # Parámetros del robot diferencial
+        self.radius = 0.045  # radio de rueda [m]
+        self.L = 0.20        # distancia entre ruedas [m]
+        self.steps_per_rev = 200
+        self.microstepping = 8
+
+        # Factor m/s a pasos/s
+        self.K = (self.steps_per_rev * self.microstepping) / (2 * math.pi * self.radius)
+
+        # Suscribirse a cmd_vel
+        self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)
+
+        self.get_logger().info('✅ Nodo cmdvel_to_uart listo para enviar pasos/segundo por UART')
+
+    def cmd_vel_callback(self, msg):
+        v = msg.linear.x
+        w = msg.angular.z
+
+        v_r = v + w * self.L / 2.0
+        v_l = v - w * self.L / 2.0
+
+        pps_r = v_r * self.K
+        pps_l = v_l * self.K
+
+        cmd = f'R:{pps_r:.2f},L:{pps_l:.2f}\n'
+        self.ser.write(cmd.encode('utf-8'))
+        self.get_logger().info(f'Enviado: {cmd.strip()}')
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = CmdVelToUART()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()

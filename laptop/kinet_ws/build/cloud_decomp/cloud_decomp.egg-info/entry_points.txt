@@ -1,0 +1,3 @@
+[console_scripts]
+desco = cloud_decomp.desco:main
+

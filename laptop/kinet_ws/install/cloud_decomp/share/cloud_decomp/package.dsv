@@ -1,0 +1,6 @@
+source;share/cloud_decomp/hook/pythonpath.ps1
+source;share/cloud_decomp/hook/pythonpath.dsv
+source;share/cloud_decomp/hook/pythonpath.sh
+source;share/cloud_decomp/hook/ament_prefix_path.ps1
+source;share/cloud_decomp/hook/ament_prefix_path.dsv
+source;share/cloud_decomp/hook/ament_prefix_path.sh

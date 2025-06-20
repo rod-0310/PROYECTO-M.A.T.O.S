@@ -1,0 +1,7 @@
+[console_scripts]
+depth_to_scan = kinect_compressor.launch_depth_to_scan:generate_launch_description
+fake_odom = kinect_compressor.fake_odom:main
+kinect_image = kinect_compressor.kinect_image_republisher:main
+modo_giro = kinect_compressor.modo_giro:main
+pid_controller = kinect_compressor.pidyolo:main
+

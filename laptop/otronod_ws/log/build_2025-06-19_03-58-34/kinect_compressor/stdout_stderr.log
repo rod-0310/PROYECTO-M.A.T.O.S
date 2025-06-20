@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/kinect_compressor/kinect_compressor.egg-info/PKG-INFO
+writing dependency_links to ../../build/kinect_compressor/kinect_compressor.egg-info/dependency_links.txt
+writing entry points to ../../build/kinect_compressor/kinect_compressor.egg-info/entry_points.txt
+writing requirements to ../../build/kinect_compressor/kinect_compressor.egg-info/requires.txt
+writing top-level names to ../../build/kinect_compressor/kinect_compressor.egg-info/top_level.txt
+reading manifest file '../../build/kinect_compressor/kinect_compressor.egg-info/SOURCES.txt'
+writing manifest file '../../build/kinect_compressor/kinect_compressor.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying package.xml -> /home/weimar/kinet/otronod_ws/install/kinect_compressor/share/kinect_compressor
+running install_egg_info
+removing '/home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/python3.10/site-packages/kinect_compressor-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/kinect_compressor/kinect_compressor.egg-info to /home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/python3.10/site-packages/kinect_compressor-0.0.0-py3.10.egg-info
+running install_scripts
+Installing kinect_image script to /home/weimar/kinet/otronod_ws/install/kinect_compressor/lib/kinect_compressor
+writing list of installed files to '/home/weimar/kinet/otronod_ws/build/kinect_compressor/install.log'

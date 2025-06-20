@@ -1,0 +1,42 @@
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+    - Class: rviz_default_plugins/Camera
+      Name: Camera
+      Enabled: true
+      Image Rendering: background and overlay
+      Overlay Alpha: 0.5
+      Zoom Factor: 10
+      Topic:
+        Value: /depth/image_raw
+      Camera Info:
+        Value: /depth/camera_info
+      Visibility:
+        Grid: true
+        PointCloud2: true
+        Value: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: PointCloud2
+      Enabled: true
+      Topic:
+        Value: /points
+      Size (Pixels): 3
+      Style: Flat Squares
+      Color Transformer: Intensity
+  Global Options:
+    Fixed Frame: depth_frame
+    Frame Rate: 30
+    Background Color: 48; 48; 48
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 5
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Pitch: 0.4
+      Yaw: 1.0

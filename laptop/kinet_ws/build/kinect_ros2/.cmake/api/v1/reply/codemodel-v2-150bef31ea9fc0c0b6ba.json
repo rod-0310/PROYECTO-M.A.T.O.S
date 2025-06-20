@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-21a4922345a3588b0c98.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "kinect_ros2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "kinect_ros2_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinect_ros2_component-817b340ff5ddf29a6e91.json",
+					"name" : "kinect_ros2_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinect_ros2_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinect_ros2_node-55f291f4ee9c82a33a03.json",
+					"name" : "kinect_ros2_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinect_ros2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinect_ros2_uninstall-d98793964c5014c719ce.json",
+					"name" : "kinect_ros2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e7d859ee63d6ea0c24ee.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/weimar/kinet/kinet_ws/build/kinect_ros2",
+		"source" : "/home/weimar/kinet/kinet_ws/src/kinect_ros2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

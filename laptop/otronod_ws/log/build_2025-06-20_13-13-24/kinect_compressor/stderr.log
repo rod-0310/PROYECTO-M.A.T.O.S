@@ -1,0 +1,3 @@
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.12.1-git20200711.33e2d80-dfsg1-0.6 is an invalid version and will not be supported in a future release
+  warnings.warn(
+error: [Errno 2] No such file or directory: '/home/weimar/kinet/otronod_ws/install/kinect_compressor/share/ament_index/resource_index/packages/kinect_compressor'

@@ -1,0 +1,21 @@
+[0.498s] Invoking command in '/home/weimar/kinet/kinet_ws/src/cloud_decomp': PYTHONPATH=/home/weimar/kinet/kinet_ws/build/cloud_decomp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/weimar/kinet/kinet_ws/install/cloud_decomp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cloud_decomp build --build-base /home/weimar/kinet/kinet_ws/build/cloud_decomp/build install --record /home/weimar/kinet/kinet_ws/build/cloud_decomp/install.log --single-version-externally-managed install_data
+[0.678s] running egg_info
+[0.678s] writing ../../build/cloud_decomp/cloud_decomp.egg-info/PKG-INFO
+[0.716s] writing dependency_links to ../../build/cloud_decomp/cloud_decomp.egg-info/dependency_links.txt
+[0.716s] writing entry points to ../../build/cloud_decomp/cloud_decomp.egg-info/entry_points.txt
+[0.716s] writing requirements to ../../build/cloud_decomp/cloud_decomp.egg-info/requires.txt
+[0.716s] writing top-level names to ../../build/cloud_decomp/cloud_decomp.egg-info/top_level.txt
+[0.717s] reading manifest file '../../build/cloud_decomp/cloud_decomp.egg-info/SOURCES.txt'
+[0.718s] writing manifest file '../../build/cloud_decomp/cloud_decomp.egg-info/SOURCES.txt'
+[0.718s] running build
+[0.718s] running build_py
+[0.719s] running install
+[0.719s] running install_lib
+[0.720s] running install_data
+[0.721s] running install_egg_info
+[0.722s] removing '/home/weimar/kinet/kinet_ws/install/cloud_decomp/lib/python3.10/site-packages/cloud_decomp-0.0.0-py3.10.egg-info' (and everything under it)
+[0.722s] Copying ../../build/cloud_decomp/cloud_decomp.egg-info to /home/weimar/kinet/kinet_ws/install/cloud_decomp/lib/python3.10/site-packages/cloud_decomp-0.0.0-py3.10.egg-info
+[0.723s] running install_scripts
+[0.736s] Installing desco script to /home/weimar/kinet/kinet_ws/install/cloud_decomp/lib/cloud_decomp
+[0.742s] writing list of installed files to '/home/weimar/kinet/kinet_ws/build/cloud_decomp/install.log'
+[0.756s] Invoked command in '/home/weimar/kinet/kinet_ws/src/cloud_decomp' returned '0': PYTHONPATH=/home/weimar/kinet/kinet_ws/build/cloud_decomp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/weimar/kinet/kinet_ws/install/cloud_decomp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cloud_decomp build --build-base /home/weimar/kinet/kinet_ws/build/cloud_decomp/build install --record /home/weimar/kinet/kinet_ws/build/cloud_decomp/install.log --single-version-externally-managed install_data

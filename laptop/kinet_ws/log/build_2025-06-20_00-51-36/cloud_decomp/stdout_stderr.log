@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/cloud_decomp/cloud_decomp.egg-info/PKG-INFO
+writing dependency_links to ../../build/cloud_decomp/cloud_decomp.egg-info/dependency_links.txt
+writing entry points to ../../build/cloud_decomp/cloud_decomp.egg-info/entry_points.txt
+writing requirements to ../../build/cloud_decomp/cloud_decomp.egg-info/requires.txt
+writing top-level names to ../../build/cloud_decomp/cloud_decomp.egg-info/top_level.txt
+reading manifest file '../../build/cloud_decomp/cloud_decomp.egg-info/SOURCES.txt'
+writing manifest file '../../build/cloud_decomp/cloud_decomp.egg-info/SOURCES.txt'
+running build
+running build_py
+copying cloud_decomp/desco.py -> /home/weimar/kinet/kinet_ws/build/cloud_decomp/build/lib/cloud_decomp
+running install
+running install_lib
+copying /home/weimar/kinet/kinet_ws/build/cloud_decomp/build/lib/cloud_decomp/desco.py -> /home/weimar/kinet/kinet_ws/install/cloud_decomp/lib/python3.10/site-packages/cloud_decomp
+byte-compiling /home/weimar/kinet/kinet_ws/install/cloud_decomp/lib/python3.10/site-packages/cloud_decomp/desco.py to desco.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/weimar/kinet/kinet_ws/install/cloud_decomp/lib/python3.10/site-packages/cloud_decomp-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/cloud_decomp/cloud_decomp.egg-info to /home/weimar/kinet/kinet_ws/install/cloud_decomp/lib/python3.10/site-packages/cloud_decomp-0.0.0-py3.10.egg-info
+running install_scripts
+Installing desco script to /home/weimar/kinet/kinet_ws/install/cloud_decomp/lib/cloud_decomp
+writing list of installed files to '/home/weimar/kinet/kinet_ws/build/cloud_decomp/install.log'
